@@ -21,9 +21,15 @@
     <ClCompile Include="MyVector.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="AddFunctor.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyVector.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="AddFunctor.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
