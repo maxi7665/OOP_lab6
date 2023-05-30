@@ -25,7 +25,7 @@ MyVector::MyVector(int size)
 
 MyVector::~MyVector()
 {
-	delete[] this->vector;
+	delete this->vector; 
 }
 
 std::string MyVector::getVectorStr()
