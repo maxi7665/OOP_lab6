@@ -18,5 +18,6 @@ public:
 	int max();
 	void addMax();
 	void sortByAbs();
+	void standardDescSort();
 };
 

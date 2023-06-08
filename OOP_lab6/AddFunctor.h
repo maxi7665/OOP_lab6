@@ -3,6 +3,6 @@ class AddFunctor
 {
 public:
 
-	void operator()(int* a, int b);
+	void operator ()(int* a, int b);
 };
 

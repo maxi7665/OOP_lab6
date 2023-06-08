@@ -4,9 +4,12 @@
 #include <string>
 #include <sstream>
 #include <ctime>
+#include <iomanip>
+#include <algorithm>
 #include "MyVector.h"
 #include "AddFunctor.h"
 
+#define NUMBER_LENGTH 3
 
 #define m1 -10
 #define m2 10
@@ -36,7 +39,7 @@ std::string MyVector::getVectorStr()
 
 	for (iter; iter < this->vector->end(); iter++)
 	{
-		ss << *iter << " ";
+		ss << std::setw(NUMBER_LENGTH) << *iter << " ";
 	}
 	
 	ss << std::endl;
@@ -167,5 +170,15 @@ void MyVector::sortByAbs()
     this->vector = mergeSort(this->vector, intSortCriterion);
 
     delete prevVector;
+}
+
+void MyVector::standardDescSort()
+{
+    std::sort(
+        this->vector->begin(),
+        this->vector->end(),
+        [](int a, int b) {
+            return a > b;
+        });
 }
 
